@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML (title)</title>
+  </head>
+  <body>
+    <table cellspacing="15">
+        <tr>
+            <td>
+                <img
+      src="https://webdesigner23.com/wp-content/uploads/2014/11/web-design-image-34-1.png"
+      width="200"
+    />
+    <!-- ^изображение по URL коду^ -->
+            </td>
+            <td>
+                <h1>Заголовок 1 (h1)</h1>
+                <p><em>Курсив правильный (em)</em></p>
+                <strong> Жирный шрифт (strong)</strong>
+                <p><i>Курсив устаревший (i)</i></p>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <img
+      src="37098d19c0174ae90db07d7fc7afd9b3.jpeg"
+      width="300"
+      alt="тут написано html"
+    />
+    <!-- ^изображение по скачанной картинке^, атрибуты: ссылка или файл с картинкой (src), размер (width),
+     описание если картинка не работает (alt) -->
+    <hr />
+    <h2>Список без определенного порядка (ul)</h2>
+    <ul type="square">
+      <li>
+        Вместо окружностей квадраты перед элементами списка (атрибут type)
+      </li>
+      <li>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+          target="_blank"
+          >Подробнее о ненумерованных списках</a
+        >
+      </li>
+      <li>Ссылки на другие сайты (тег <а> и атрибут href)</li>
+      <li>
+        Ссылка создает новую вкладку, а не заменяет использующуюся (атрибут
+        target="_blank")
+      </li>
+      <li>Элемент списка (li)</li>
+    </ul>
+    <hr />
+    <h2>Список с определенным порядком (ol)</h2>
+    <ol type="I">
+      <li>Вместо арабских римские цифры (атрибут type)</li>
+      <li>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+          target="_blank"
+          >Подробнее о нумерованных списках</a
+        >
+      </li>
+      <li>Ссылки на другие сайты (тег <а> и атрибут href)</li>
+      <li>
+        Ссылка создает новую вкладку, а не заменяет использующуюся (атрибут
+        target="_blank")
+      </li>
+      <li>Элемент списка (li)</li>
+    </ol>
+    <hr />
+    <h2>Таблицы (table)</h2>
+    <table border="2">
+    <thead>
+      <tr>
+        <th>Теги</th>
+        <th>Атрибуты</th>
+        <th>Теги для структуры</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Строки таблицы (tr)</td>
+            <td>Рамки таблицы (border) (не используется)</td>
+            <td>Шапка таблицы (thead)</td>
+        </tr>
+        <tr>
+            <td>Cтолбцы таблицы (td)</td>
+            <td>Расстояние между ячейками (cellspacing)</td>
+            <td>Тело таблицы (tbody)</td>
+        </tr>
+        <tr>
+            <td>Заголовок столбца (th)</td>
+            <td>Ячейка таблицы</td>
+            <td>Конец таблицы(tfoot)</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Конец таблицы</td>
+            <td>Конец таблицы</td>
+            <td>Конец таблицы</td>
+        </tr>
+    </tfoot>
+    </table>
+    <hr />
+    <h2>Ссылка на другую страницу сайта</h2>
+    <a href="другая страница сайта.html">Другая страница</a>
+    <hr />
+    <h2>Формы (form)</h2>
+    <form action="/">
+        <label for="name">Название для формы (label), строка для ввода (input с атрибутом text):</label>
+        <input type="text" id="name" 
+        placeholder="Подсказка для ввода">
+        <br>
+        <label for="email">Строка для ввода (input с атрибутом email):</label>
+        <input type="email" id="email"
+        placeholder="Подсказка для ввода">
+        <br>
+        <label for="text">Большое поле для ввода (textarea):</label>
+        <br>
+        <textarea id="text" rows="6" cols="45"></textarea>
+        <br>
+        <input type="submit" value="Текст в рамочке (value)">
+        <!-- Типы инпутов: текст (text), имейл (email), число(number), пароль (password), цвет (color), календарь (date), ползунок (range),
+        "якорь" (checkbox), кнопки (radio), кнопки отправки (submit) и др.  -->
+    </form>
+  </body>
+</html>
